@@ -593,3 +593,50 @@ nav ul{
     }
 
 }
+/* =======================
+        LOGO
+======================= */
+
+.logo img{
+
+    height:70px;
+
+    width:auto;
+
+}
+
+.hero-logo{
+
+    width:220px;
+
+    max-width:80%;
+
+    margin-bottom:30px;
+
+    filter:drop-shadow(0 10px 25px rgba(0,0,0,.45));
+
+    animation:flotar 4s ease-in-out infinite;
+
+}
+
+@keyframes flotar{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-8px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}

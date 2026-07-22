@@ -1,0 +1,1 @@
+console.log('ENAFOL v1.0');

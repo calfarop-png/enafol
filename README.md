@@ -1,2 +1,1 @@
-# enafol
-Sitio Oficial Agrupación Folclórica ENAFOL
+Proyecto inicial ENAFOL

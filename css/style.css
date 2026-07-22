@@ -1,7 +1,7 @@
-/* ===========================================
+/* ==========================================
    ENAFOL
-   www.enafol.cl
-=========================================== */
+   Diseño 2026
+==========================================*/
 
 *{
     margin:0;
@@ -17,91 +17,19 @@ body{
 
     font-family:'Poppins',sans-serif;
 
-    background:#090909;
+    background:#080808;
 
-    color:#ffffff;
+    color:#fff;
 
     overflow-x:hidden;
 
 }
 
-/* ===========================
-      LOADER
-=========================== */
+/*--------------------*/
+/* NAVBAR             */
+/*--------------------*/
 
-#loader{
-
-    position:fixed;
-
-    inset:0;
-
-    background:#000;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:9999;
-
-}
-
-#loader img{
-
-    width:170px;
-
-    animation:logo 2s infinite ease-in-out;
-
-}
-
-@keyframes logo{
-
-    0%{
-
-        transform:scale(.95);
-
-    }
-
-    50%{
-
-        transform:scale(1.05);
-
-    }
-
-    100%{
-
-        transform:scale(.95);
-
-    }
-
-}
-
-#loader h1{
-
-    margin-top:20px;
-
-    font-size:42px;
-
-    font-weight:800;
-
-    letter-spacing:5px;
-
-}
-
-#loader p{
-
-    color:#d7d7d7;
-
-}
-
-/* ===========================
-        MENU
-=========================== */
-
-.navbar{
+header{
 
     position:fixed;
 
@@ -109,39 +37,51 @@ body{
 
     width:100%;
 
+    z-index:999;
+
+    background:rgba(0,0,0,.75);
+
+    backdrop-filter:blur(12px);
+
+}
+
+nav{
+
+    max-width:1200px;
+
+    margin:auto;
+
     display:flex;
 
     justify-content:space-between;
 
     align-items:center;
 
-    padding:18px 8%;
-
-    background:rgba(0,0,0,.55);
-
-    backdrop-filter:blur(10px);
-
-    z-index:1000;
+    padding:20px;
 
 }
 
-.logo img{
+nav h1{
 
-    height:70px;
+    color:#fff;
+
+    letter-spacing:4px;
+
+    font-size:30px;
 
 }
 
-.navbar ul{
+nav ul{
 
     display:flex;
 
-    gap:30px;
+    gap:25px;
 
     list-style:none;
 
 }
 
-.navbar a{
+nav a{
 
     color:#fff;
 
@@ -153,14 +93,15 @@ body{
 
 }
 
-.navbar a:hover{
+nav a:hover{
 
-    color:#e5002b;
+    color:#d71920;
 
 }
-/* ===========================
-        HERO
-=========================== */
+
+/*--------------------*/
+/* HERO               */
+/*--------------------*/
 
 .hero{
 
@@ -174,90 +115,59 @@ body{
 
     text-align:center;
 
-    position:relative;
-
-    padding:120px 20px;
+    padding:40px;
 
     background:
-        linear-gradient(rgba(0,0,0,.72),
-        rgba(0,0,0,.82)),
-        url("../assets/images/fondo.jpg") center center/cover no-repeat;
+
+    radial-gradient(circle at top,#0b5ed7 0%,transparent 40%),
+
+    radial-gradient(circle at bottom,#d71920 0%,transparent 40%),
+
+    #050505;
 
 }
 
-.overlay{
+.hero-text{
 
-    position:absolute;
-
-    inset:0;
-
-    background:
-        radial-gradient(circle at top,#e30613 0%,transparent 35%),
-        radial-gradient(circle at bottom,#0057b8 0%,transparent 35%);
-
-    opacity:.18;
-
-}
-
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:900px;
-
-}
-
-.hero-logo{
-
-    width:220px;
-
-    margin-bottom:30px;
-
-    filter:drop-shadow(0 0 20px rgba(255,255,255,.25));
-
-}
-
-.hero h1{
-
-    font-size:24px;
-
-    letter-spacing:6px;
-
-    font-weight:300;
+    max-width:850px;
 
 }
 
 .hero h2{
 
-    font-size:74px;
+    font-size:22px;
+
+    font-weight:300;
+
+    letter-spacing:8px;
+
+}
+
+.hero h1{
+
+    font-size:90px;
+
+    margin:15px 0;
 
     font-weight:800;
-
-    margin-top:10px;
-
-    color:#ffffff;
 
 }
 
 .hero p{
 
-    margin-top:20px;
+    font-size:24px;
 
-    font-size:22px;
-
-    color:#d8d8d8;
+    color:#d7d7d7;
 
 }
 
-/* ===========================
-        BOTONES
-=========================== */
+/*--------------------*/
+/* BOTONES            */
+/*--------------------*/
 
-.social-buttons{
+.botones{
 
-    margin-top:40px;
+    margin-top:45px;
 
     display:flex;
 
@@ -269,55 +179,69 @@ body{
 
 }
 
-.social-buttons a{
+.botones a{
 
     text-decoration:none;
 
-    color:#fff;
+    color:white;
 
-    padding:15px 30px;
+    padding:18px 35px;
 
-    border-radius:50px;
+    border-radius:60px;
 
-    background:#1d1d1d;
-
-    border:2px solid #ffffff20;
+    font-weight:700;
 
     transition:.35s;
 
-    font-weight:600;
+}
+
+.instagram{
+
+    background:#E1306C;
 
 }
 
-.social-buttons a:hover{
+.facebook{
 
-    transform:translateY(-5px);
+    background:#1877F2;
 
-    background:#e30613;
+}
 
-    border-color:#e30613;
+.tiktok{
+
+    background:#111;
+
+    border:2px solid white;
+
+}
+
+.botones a:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
 
 }
 
 #btnWhatsapp{
 
-    margin-top:35px;
-
-    padding:18px 38px;
-
-    border:none;
-
-    border-radius:50px;
-
-    cursor:pointer;
+    margin-top:40px;
 
     background:#25D366;
 
-    color:#fff;
+    color:white;
+
+    border:none;
+
+    padding:18px 40px;
+
+    border-radius:60px;
 
     font-size:18px;
 
-    font-weight:700;
+    font-weight:bold;
+
+    cursor:pointer;
 
     transition:.35s;
 
@@ -326,5 +250,157 @@ body{
 #btnWhatsapp:hover{
 
     transform:scale(1.05);
+
+}
+
+/*--------------------*/
+/* SECCIONES          */
+/*--------------------*/
+
+section{
+
+    padding:100px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    font-size:42px;
+
+    margin-bottom:35px;
+
+}
+
+section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    text-align:center;
+
+    font-size:19px;
+
+    line-height:1.8;
+
+    color:#d4d4d4;
+
+}
+
+/*--------------------*/
+/* CARDS              */
+/*--------------------*/
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+    margin-top:50px;
+
+}
+
+.cards a{
+
+    background:#151515;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    color:white;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    font-size:22px;
+
+    transition:.35s;
+
+}
+
+.cards a:hover{
+
+    background:#d71920;
+
+    transform:translateY(-8px);
+
+}
+
+/*--------------------*/
+/* FOOTER             */
+/*--------------------*/
+
+footer{
+
+    background:#000;
+
+    padding:50px;
+
+    text-align:center;
+
+}
+
+footer h3{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+/*--------------------*/
+/* RESPONSIVE         */
+/*--------------------*/
+
+@media(max-width:900px){
+
+nav{
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+.hero h1{
+
+    font-size:56px;
+
+}
+
+.hero h2{
+
+    font-size:18px;
+
+    letter-spacing:4px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.botones{
+
+    flex-direction:column;
+
+}
 
 }

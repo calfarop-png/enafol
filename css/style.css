@@ -160,7 +160,7 @@ a{
 
     position:relative;
 
-    min-height:100vh;
+    min-height:80vh;
 
     display:flex;
 
@@ -170,7 +170,7 @@ a{
 
     overflow:hidden;
 
-    padding:120px 20px 80px;
+    padding:90px 20px 40px;
 
 }
 
@@ -217,7 +217,7 @@ a{
 
 .hero-logo{
 
-    width:240px;
+    width:170px;
 
     margin:auto;
 
@@ -245,7 +245,7 @@ a{
 
 .hero h1{
 
-    font-size:90px;
+    font-size:60px;
 
     font-weight:800;
 
@@ -255,7 +255,7 @@ a{
 
 .hero h2{
 
-    font-size:32px;
+    font-size:24px;
 
     font-weight:400;
 
@@ -267,9 +267,9 @@ a{
 
 .hero p{
 
-    margin-top:30px;
+    margin-top:18px;
 
-    font-size:20px;
+    font-size:17px;
 
     line-height:1.8;
 

@@ -740,22 +740,23 @@ footer{
 .modal{
 
     position:fixed;
-
     inset:0;
 
     display:none;
-
     justify-content:center;
-
     align-items:center;
 
-    background:rgba(0,0,0,.72);
+    padding:20px;
+
+    background:rgba(0,0,0,.75);
 
     backdrop-filter:blur(8px);
 
-    z-index:99999;
+    overflow-y:auto;
 
-    padding:20px;
+    -webkit-overflow-scrolling:touch;
+
+    z-index:99999;
 
 }
 
@@ -770,18 +771,19 @@ footer{
 .modal-box{
 
     width:100%;
+    max-width:600px;
 
-    max-width:620px;
+    max-height:90vh;
+
+    overflow-y:auto;
 
     background:#171717;
 
-    border-radius:22px;
+    border-radius:20px;
 
-    padding:40px;
+    padding:35px;
 
     position:relative;
-
-    box-shadow:var(--shadow);
 
 }
 
@@ -801,15 +803,19 @@ footer{
 
 .cerrar{
 
-    position:absolute;
+    position:sticky;
 
-    right:20px;
+    top:0;
 
-    top:12px;
+    float:right;
+
+    cursor:pointer;
 
     font-size:34px;
 
-    cursor:pointer;
+    background:#171717;
+
+    padding:5px 8px;
 
 }
 

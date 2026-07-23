@@ -64,13 +64,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 const modal = document.getElementById("modalWhatsapp");
 
-const btnWhatsapp = document.getElementById("btnWhatsapp");
+const botonesWhatsapp = document.querySelectorAll(".abrirWhatsapp");
 
 const cerrarModal = document.getElementById("cerrarModal");
 
-if (btnWhatsapp && modal) {
+botonesWhatsapp.forEach((boton) => {
 
-    btnWhatsapp.addEventListener("click", () => {
+    boton.addEventListener("click", () => {
 
         modal.classList.add("activo");
 
@@ -78,7 +78,7 @@ if (btnWhatsapp && modal) {
 
     });
 
-}
+});
 
 if (cerrarModal) {
 

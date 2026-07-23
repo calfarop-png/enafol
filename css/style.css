@@ -1058,16 +1058,23 @@ footer{
 
 }
 
-.hero-social a{
-
-    width:55px;
-
-    height:55px;
+.hero-social{
 
     display:flex;
-
     justify-content:center;
+    align-items:center;
+    gap:18px;
+    margin:25px 0 20px;
 
+}
+
+.hero-social a{
+
+    width:52px;
+    height:52px;
+
+    display:flex;
+    justify-content:center;
     align-items:center;
 
     border-radius:50%;
@@ -1075,6 +1082,23 @@ footer{
     background:#1b1b1b;
 
     transition:.3s;
+
+}
+
+.hero-social a:hover{
+
+    transform:translateY(-4px) scale(1.08);
+
+    background:#d81b27;
+
+}
+
+.hero-social img{
+
+    width:28px;
+    height:28px;
+
+    object-fit:contain;
 
 }
 

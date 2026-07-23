@@ -1,0 +1,356 @@
+/*==================================================
+ENAFOL QR CARD
+Version 1.0
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+
+    --rojo:#c1121f;
+    --rojo-hover:#a40f19;
+
+    --gris:#f4f5f7;
+
+    --texto:#222;
+
+    --texto2:#777;
+
+    --blanco:#ffffff;
+
+    --sombra:0 10px 35px rgba(0,0,0,.12);
+
+    --radio:24px;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#ececec;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px 15px;
+
+    color:var(--texto);
+
+}
+
+
+/*============================
+FONDO
+============================*/
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(135deg,#c1121f,#830e16);
+
+    z-index:-2;
+
+}
+
+.background::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top,
+
+    rgba(255,255,255,.15),
+
+    transparent 60%);
+
+}
+
+
+/*============================
+CARD
+============================*/
+
+.card{
+
+    width:100%;
+
+    max-width:430px;
+
+    background:white;
+
+    border-radius:35px;
+
+    padding:40px 28px;
+
+    box-shadow:var(--sombra);
+
+}
+
+
+/*============================
+LOGO
+============================*/
+
+.logo{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-bottom:18px;
+
+}
+
+.logo img{
+
+    width:130px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/*============================
+TITULOS
+============================*/
+
+h1{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#111;
+
+}
+
+h2{
+
+    text-align:center;
+
+    font-size:1rem;
+
+    color:var(--rojo);
+
+    margin-top:8px;
+
+    font-weight:600;
+
+}
+
+p{
+
+    text-align:center;
+
+    margin:20px 0 35px;
+
+    color:var(--texto2);
+
+    line-height:1.6;
+
+}
+
+
+/*============================
+BOTONERA
+============================*/
+
+.links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+.link{
+
+    display:flex;
+
+    align-items:center;
+
+    background:var(--gris);
+
+    border-radius:18px;
+
+    padding:16px 18px;
+
+    transition:.30s;
+
+    text-decoration:none;
+
+    color:#111;
+
+}
+
+.link:hover{
+
+    background:var(--rojo);
+
+    color:white;
+
+    transform:translateY(-4px);
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.link img{
+
+    width:34px;
+
+    height:34px;
+
+    object-fit:contain;
+
+    margin-right:18px;
+
+}
+
+.link div{
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.link strong{
+
+    font-size:1rem;
+
+}
+
+.link span{
+
+    font-size:.85rem;
+
+    opacity:.75;
+
+}
+
+.link:hover span{
+
+    opacity:1;
+
+}
+
+.arrow{
+
+    margin-left:auto;
+
+    font-size:1.5rem;
+
+    font-weight:700;
+
+}
+
+
+/*============================
+FOOTER
+============================*/
+
+footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:#999;
+
+    font-size:.85rem;
+
+}
+
+
+/*============================
+RESPONSIVE
+============================*/
+
+@media(max-width:480px){
+
+.card{
+
+padding:30px 20px;
+
+}
+
+.logo img{
+
+width:105px;
+
+}
+
+h1{
+
+font-size:1.8rem;
+
+}
+
+.link{
+
+padding:15px;
+
+}
+
+.link img{
+
+width:30px;
+
+height:30px;
+
+}
+
+}

@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <meta charset="UTF-8">
 
@@ -167,39 +168,49 @@
 
         </p>
 
-        <div class="hero-buttons">
+.hero-social{
 
-            <a class="btn btn-instagram"
+    display:flex;
+    justify-content:center;
+    gap:22px;
+    margin-top:25px;
 
-               href="https://www.instagram.com/enafol.official"
+}
 
-               target="_blank">
+.hero-social a{
 
-                Instagram
+    width:52px;
+    height:52px;
 
-            </a>
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-            <a class="btn btn-facebook"
+    border-radius:50%;
 
-               href="https://www.facebook.com/conjuntofolcloricoEnafol"
+    background:#1a1a1a;
 
-               target="_blank">
+    color:#ffffff;
 
-                Facebook
+    font-size:24px;
 
-            </a>
+    transition:.3s;
 
-            <a class="btn btn-tiktok"
+}
 
-               href="https://www.tiktok.com/@enafol.oficial"
+.hero-social a:hover{
 
-               target="_blank">
+    background:#d81b27;
 
-                TikTok
+    transform:translateY(-4px) scale(1.08);
 
-            </a>
+}
 
-        </div>
+.hero-social i{
+
+    pointer-events:none;
+
+}
 
         <button class="btn-whatsapp abrirWhatsapp">
                 Contactar por WhatsApp

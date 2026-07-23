@@ -1046,3 +1046,52 @@ footer{
     }
 
 }
+.hero-social{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+.hero-social a{
+
+    width:55px;
+
+    height:55px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#1b1b1b;
+
+    transition:.3s;
+
+}
+
+.hero-social a:hover{
+
+    transform:translateY(-5px) scale(1.08);
+
+    background:#d81b27;
+
+}
+
+.hero-social img{
+
+    width:28px;
+
+    height:28px;
+
+    filter:invert(1);
+
+}

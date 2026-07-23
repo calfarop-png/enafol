@@ -165,5 +165,46 @@ document.addEventListener("DOMContentLoaded", () => {
         img.loading="lazy";
 
     });
+    /*=========================
+MODAL WHATSAPP
+=========================*/
+
+const modal=document.getElementById("modalWhatsapp");
+
+const abrir=document.querySelector(".abrirWhatsapp");
+
+const cerrar=document.querySelector(".cerrar");
+
+if(abrir){
+
+    abrir.addEventListener("click",(e)=>{
+
+        e.preventDefault();
+
+        modal.classList.add("activo");
+
+    });
+
+}
+
+if(cerrar){
+
+    cerrar.addEventListener("click",()=>{
+
+        modal.classList.remove("activo");
+
+    });
+
+}
+
+modal.addEventListener("click",(e)=>{
+
+    if(e.target===modal){
+
+        modal.classList.remove("activo");
+
+    }
+
+});
 
 });

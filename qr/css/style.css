@@ -354,3 +354,120 @@ height:30px;
 }
 
 }
+/*==================================
+MODAL WHATSAPP
+==================================*/
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.70);
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+.modal.activo{
+
+    display:flex;
+
+}
+
+.modal-box{
+
+    width:92%;
+
+    max-width:420px;
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:30px;
+
+    position:relative;
+
+}
+
+.modal-box h2{
+
+    text-align:center;
+
+    margin-bottom:10px;
+
+}
+
+.modal-box p{
+
+    text-align:center;
+
+    margin-bottom:25px;
+
+}
+
+.cerrar{
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    background:none;
+
+    border:none;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+.wa-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+.wa-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    background:#f4f4f4;
+
+    border-radius:15px;
+
+    padding:15px;
+
+}
+
+.wa-card a{
+
+    background:#25D366;
+
+    color:#fff;
+
+    padding:8px 15px;
+
+    border-radius:10px;
+
+    text-decoration:none;
+
+}
